@@ -92,9 +92,7 @@ print "alert('DID NOT work')";
 print "</script>";  
 		}
 
-		print "<script type=\"text/javascript\">"; 
-print "alert('got here')"; 
-print "</script>"; 
+		
 	}
 
 
@@ -110,6 +108,9 @@ print "</script>";
 		$response['html'] = $this->response_html;
 		
 		echo json_encode($response);
+		print "<script type=\"text/javascript\">"; 
+print "alert('got here')"; 
+print "</script>"; 
 	}
 }
 
