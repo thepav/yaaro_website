@@ -91,6 +91,10 @@ print "</script>";
 print "alert('DID NOT work')"; 
 print "</script>";  
 		}
+
+		print "<script type=\"text/javascript\">"; 
+print "alert('got here')"; 
+print "</script>"; 
 	}
 
 
