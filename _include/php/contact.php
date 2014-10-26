@@ -82,9 +82,11 @@ class Contact_Form{
 		{
 			$this->response_status = 1;
 			$this->response_html = '<p>Thank You!</p>';
-			alert('cool!');
+			$message = "Worked Doe.";
+			echo "<script type='text/javascript'>alert('$message');</script>";
 		}else{
-			alert('fuck');
+			$message = "Fuck... didn't work";
+			echo "<script type='text/javascript'>alert('$message');</script>";
 		}
 	}
 
