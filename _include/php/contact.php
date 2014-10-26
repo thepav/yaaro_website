@@ -82,6 +82,9 @@ class Contact_Form{
 		{
 			$this->response_status = 1;
 			$this->response_html = '<p>Thank You!</p>';
+			alert('cool!');
+		}else{
+			alert('fuck');
 		}
 	}
 
