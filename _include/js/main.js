@@ -194,7 +194,7 @@ BRUSHED.contactForm = function(){
 			type: "POST",
 			url: "https://mandrillapp.com/api/1.0/messages/send.json",
 			data: {
-			    "key": "example key",
+			    "key": "969LwOn_RAe68Ne7LrWGvA",
 			    "message": {
 			        "html": "<p>"+$('#contact-name').text() +" said: </p> <p>"+$('contact-message').text()+"</p>",
 			        "text": $('#contact-name').text()+"said \n"+$('contact-message').text(),
@@ -235,7 +235,7 @@ BRUSHED.contactForm = function(){
 					$('#contact-form textarea').val('');
 				}
 				
-				$('#response').empty().html(response.html);
+				$('#response').empty().html("SENT!");
 			}
 		});
 		return false;
