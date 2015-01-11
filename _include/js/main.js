@@ -224,8 +224,7 @@ BRUSHED.contactForm = function(){
 			        "merge_language": "mailchimp",
 			    },
 			    "async": false,
-			    "ip_pool": "Main Pool",
-			    "send_at": "example send_at"
+			    "ip_pool": "Main Pool"
 			},
 			dataType: 'json',
 			success: function(response) {
