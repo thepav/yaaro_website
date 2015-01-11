@@ -236,7 +236,7 @@ BRUSHED.contactForm = function(){
 				}
 				
 				$('#response').empty().html("SENT!");
-			}
+			},
 			error: function(response){
 				$('#response').empty().html(response);
 				alert(response);
