@@ -193,7 +193,40 @@ BRUSHED.contactForm = function(){
 		$.ajax({
 			type: "POST",
 			url: "_include/php/contact.php",
-			data: fields,
+			data: {
+			    "key": "example key",
+			    "message": {
+			        "html": "<p>"+$('#contact-name').text() +" said: </p> <p>"+$('contact-message').text()+"</p>",
+			        "text": $('#contact-name').text()+"said \n"+$('contact-message').text(),
+			        "subject": "AIM Website Contact",
+			        "from_email": $('contact-email').text(),
+			        "from_name": $('#contact-name').text(),
+			        "to": [
+			            {
+			                "email": "arjun@aimmotorcycles.com",
+			                "name": "Contact Form Master",
+			                "type": "to"
+			            }
+			        ],
+			        "important": false,
+			        "track_opens": true,
+			        "track_clicks": null,
+			        "auto_text": null,
+			        "auto_html": null,
+			        "inline_css": null,
+			        "url_strip_qs": null,
+			        "preserve_recipients": null,
+			        "view_content_link": null,
+			        "tracking_domain": null,
+			        "signing_domain": null,
+			        "return_path_domain": null,
+			        "merge": true,
+			        "merge_language": "mailchimp",
+			    },
+			    "async": false,
+			    "ip_pool": "Main Pool",
+			    "send_at": "example send_at"
+			},
 			dataType: 'json',
 			success: function(response) {
 				

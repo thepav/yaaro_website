@@ -82,14 +82,8 @@ class Contact_Form{
 		{
 			$this->response_status = 1;
 			$this->response_html = '<p>Thank You!</p>';
-			print "<script type=\"text/javascript\">"; 
-print "alert('worked')"; 
-print "</script>";  
+			
 
-		}else{
-			print "<script type=\"text/javascript\">"; 
-print "alert('DID NOT work')"; 
-print "</script>";  
 		}
 
 		
@@ -108,9 +102,6 @@ print "</script>";
 		$response['html'] = $this->response_html;
 		
 		echo json_encode($response);
-		print "<script type=\"text/javascript\">"; 
-print "alert('got here')"; 
-print "</script>"; 
 	}
 }
 
