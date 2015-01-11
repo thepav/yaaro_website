@@ -190,9 +190,9 @@ BRUSHED.contactForm = function(){
 		
 		var fields = $contact_form.serialize();
 		
-		$.ajax({
+		$.post({
 			type: "POST",
-			url: "_include/php/contact.php",
+			url: "https://mandrillapp.com/api/1.0/messages/send.json",
 			data: {
 			    "key": "example key",
 			    "message": {
