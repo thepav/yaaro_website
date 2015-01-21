@@ -77,7 +77,7 @@ BRUSHED.slider = function(){
 		thumb_links				:	0,			// Individual thumb links for each slide
 		thumbnail_navigation    :   0,			// Thumbnail navigation
 		slides 					:  	[			// Slideshow Images
-											{image : '_include/img/slider-images/light4.jpg', title : "<div class='slide-content'>Advanced Idea Mechanics</div>", thumb : '', url : ''},
+											{image : '_include/img/slider-images/light4.jpg', title : "<div class='slide-content'>Advanced Idea Mechanics, Inc.</div>", thumb : '', url : ''},
 											],
 									
 		// Theme Options			   

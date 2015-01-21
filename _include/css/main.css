@@ -329,9 +329,10 @@ h3.spec {
 #home-slider .slide-content {
 	font-size: 60px;
 	color: #FFFFFF;
-	letter-spacing: -3px;
+	letter-spacing: -1px;
 	opacity: 0.7;
-	font-family: 'Lobster Two', cursive;
+	font-family: 'Times New Roman';
+    text-transform: uppercase;
 }
 
 #home-slider .control-nav {
@@ -505,7 +506,8 @@ header #logo {
 
 header #logo a {
 	background: url(../img/logo.png) no-repeat;
-	width: 96px;
+    background-size: contain;
+	width: 150px;
 	height: 30px;
 	text-indent: -9999px;
 	display: block;
